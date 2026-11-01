@@ -1,0 +1,21 @@
+#!/bin/sh
+# Disable services that are not useful on a 2 GB Moto E4 bring-up image.
+# Packages that are hard dependencies of the GNOME UI remain installed;
+# only their default-runlevel services are removed.
+for svc in \
+	bluetooth \
+	cupsd \
+	modemmanager \
+	iio-sensor-proxy \
+	q6voiced \
+	rmtfs \
+	msm-modem-uim-selection \
+	msm-modem-wwan-port \
+	modem-gnss \
+	81voltd \
+	avahi-daemon
+do
+	rc-update del "$svc" default 2>/dev/null || true
+	rc-update del "$svc" boot 2>/dev/null || true
+done
+exit 0

@@ -1,0 +1,285 @@
+{
+  "status": "Offline firmware payload only; not installed or authenticated by Linux on this phone",
+  "files": [
+    {
+      "source": "firmware/modem-image/image/adsp.b10",
+      "firmware_request_name": "adsp.b10",
+      "sha256": "7e40412852c1e011de0632f17c6e0c22b278a5131a11fef593d4b3af5147e5e4"
+    },
+    {
+      "source": "firmware/modem-image/image/modem.b11",
+      "firmware_request_name": "modem.b11",
+      "sha256": "e303f0eccfb1f474c3214ae264b346a9c8451d65697a0a940ca7f597952b5df1"
+    },
+    {
+      "source": "firmware/modem-image/image/modem.b18",
+      "firmware_request_name": "modem.b18",
+      "sha256": "28d3fe0fcc3c0763fb3aab1d7624b9d4a4ab14b60bb981f9e1852927af525896"
+    },
+    {
+      "source": "firmware/modem-image/image/modem.b20",
+      "firmware_request_name": "modem.b20",
+      "sha256": "2c7e5451346817dfc7fb7c8cfe7ae71a48f70da9d98b4845375932fa048273c2"
+    },
+    {
+      "source": "firmware/modem-image/image/venus.b03",
+      "firmware_request_name": "venus.b03",
+      "sha256": "ccfcab93b73ab5e4b4d6b94c065e74e5ff465bf1536336dd2e1abf04c3ac385d"
+    },
+    {
+      "source": "firmware/modem-image/image/venus.b04",
+      "firmware_request_name": "venus.b04",
+      "sha256": "43b09596e1496809aaa964b34c146580f0566c86bc9d7218a1288fd15fb93424"
+    },
+    {
+      "source": "firmware/modem-image/image/modem.b21",
+      "firmware_request_name": "modem.b21",
+      "sha256": "aa82a43271810108c330baf7820fc550406c1afe7d74cdce737aaae95ea7639a"
+    },
+    {
+      "source": "firmware/modem-image/image/modem.b19",
+      "firmware_request_name": "modem.b19",
+      "sha256": "9f87d59d5d26dcd683f6753aef66688cf2a00ee5e8b9d15bc5a2c15f0bd9d212"
+    },
+    {
+      "source": "firmware/modem-image/image/modem.b10",
+      "firmware_request_name": "modem.b10",
+      "sha256": "e12a5dfe92e4e854469f54b7ddafcc3e60b7d820cb90b5743d7c29d17fb76dad"
+    },
+    {
+      "source": "firmware/modem-image/image/adsp.b11",
+      "firmware_request_name": "adsp.b11",
+      "sha256": "3ed73078f387139ac93aba083268bcb4e93178e4ddf289aaadafb8bfab564f53"
+    },
+    {
+      "source": "firmware/modem-image/image/modem.b17",
+      "firmware_request_name": "modem.b17",
+      "sha256": "ef0274a0b46703377cfbd4a949ba2a532a6c31310f74cc0e3fa6ab6fafe0c984"
+    },
+    {
+      "source": "firmware/modem-image/image/venus.b02",
+      "firmware_request_name": "venus.b02",
+      "sha256": "f09de86a52be5dd90fd9038faeda608ba6a06f969c22d84be5041b864198e3e1"
+    },
+    {
+      "source": "firmware/modem-image/image/wcnss.b02",
+      "firmware_request_name": "wcnss.b02",
+      "sha256": "dca975cb64daf84fd2cb81b277d652c680cbaf7d66a32821996807722093cee1"
+    },
+    {
+      "source": "firmware/modem-image/image/wcnss.b04",
+      "firmware_request_name": "wcnss.b04",
+      "sha256": "c58580dff97e0f91d4fd0eefaf22e9fb345617d72dcc364a817ff4e2a6ba3904"
+    },
+    {
+      "source": "firmware/modem-image/image/wcnss.b10",
+      "firmware_request_name": "wcnss.b10",
+      "sha256": "57e55567e41dbe321bd9cb5584159bde13307b99402710c3b4f8269ed550617a"
+    },
+    {
+      "source": "firmware/modem-image/image/wcnss.b11",
+      "firmware_request_name": "wcnss.b11",
+      "sha256": "ff6335069b6e140eb47149d847aea80bf7e2b06bd80ae9708aa382efb3ae21ee"
+    },
+    {
+      "source": "firmware/modem-image/image/adsp.b02",
+      "firmware_request_name": "adsp.b02",
+      "sha256": "09d38f5099fac08baf88a51c7ebc8da1c91363e6da79e235612b3241b2b8944f"
+    },
+    {
+      "source": "firmware/modem-image/image/adsp.b05",
+      "firmware_request_name": "adsp.b05",
+      "sha256": "4f120bd8337909efe6d1156b63b7c38b4628635c27f879dfc3779dc08d5a5f8b"
+    },
+    {
+      "source": "firmware/modem-image/image/modem.b03",
+      "firmware_request_name": "modem.b03",
+      "sha256": "7b15db23dc0ed8ef53bfe6faf1be5a11d95c25f645a5c32a5ad2cd039a1928f8"
+    },
+    {
+      "source": "firmware/modem-image/image/adsp.b04",
+      "firmware_request_name": "adsp.b04",
+      "sha256": "78ca9aaba5b8dd8aa984f013720eb3cbf1c238040553e0e6bc699f7d9210e29f"
+    },
+    {
+      "source": "firmware/modem-image/image/adsp.b03",
+      "firmware_request_name": "adsp.b03",
+      "sha256": "4ae33f8e12021ddbce1b754ab040e5d16062a8221880e2ab6cf96883f2cb4a10"
+    },
+    {
+      "source": "firmware/modem-image/image/modem.b05",
+      "firmware_request_name": "modem.b05",
+      "sha256": "8308c38128e577a84e2189f5d62c03c2f9321327c97c058ac98aa6e1ccba5008"
+    },
+    {
+      "source": "firmware/modem-image/image/venus.b00",
+      "firmware_request_name": "venus.b00",
+      "sha256": "84a9c4f48132e3d10d4fdf613c2146a58b6b17680dece5e8b233970b1cd1e7a6"
+    },
+    {
+      "source": "firmware/modem-image/image/modem.mdt",
+      "firmware_request_name": "modem.mdt",
+      "sha256": "24c398de913080ce4eaf2f0eee863a0ced96e3ac71d186976bd60ebdd7469141"
+    },
+    {
+      "source": "firmware/modem-image/image/adsp.b14",
+      "firmware_request_name": "adsp.b14",
+      "sha256": "d22c43b3856049cd8e68212721c571af7d72bf8925300182d797f182bd5911d3"
+    },
+    {
+      "source": "firmware/modem-image/image/modem.b12",
+      "firmware_request_name": "modem.b12",
+      "sha256": "53d927129077ec94a9ee269fb91b5aa3897abe63a592aaf3067dfe89ee010410"
+    },
+    {
+      "source": "firmware/modem-image/image/adsp.b13",
+      "firmware_request_name": "adsp.b13",
+      "sha256": "58ef06a987aec4acea91b0d044189970349569f8577987bd79044cd022c89fb9"
+    },
+    {
+      "source": "firmware/modem-image/image/adsp.mdt",
+      "firmware_request_name": "adsp.mdt",
+      "sha256": "06606f3a83d9539c0978586c2810c0ef4d93c8b0e6e876aeb1f58a29c9ad530e"
+    },
+    {
+      "source": "firmware/modem-image/image/venus.b01",
+      "firmware_request_name": "venus.b01",
+      "sha256": "4a342b7e32bdd7cbac067cb1c8ae73ce451a9dc13a76b30d02f0f8d43c55289b"
+    },
+    {
+      "source": "firmware/modem-image/image/modem.b22",
+      "firmware_request_name": "modem.b22",
+      "sha256": "9dbec9fe3d4341031fcad0ab2b03e54c31f44477e811d1986df7206833b394aa"
+    },
+    {
+      "source": "firmware/modem-image/image/adsp.b12",
+      "firmware_request_name": "adsp.b12",
+      "sha256": "bb85b5c12b2e231a95d5454c47f01a3ed0232e673e3449bedd101e521b93c482"
+    },
+    {
+      "source": "firmware/modem-image/image/modem.b13",
+      "firmware_request_name": "modem.b13",
+      "sha256": "e60e234b7d8d7432dccd58059b26930531b7a51a0acc055ad1c7064b42a6123d"
+    },
+    {
+      "source": "firmware/modem-image/image/wcnss.b01",
+      "firmware_request_name": "wcnss.b01",
+      "sha256": "1d07b8c0cf0d509e3aa8dbf4f159d1faf45f7aaf46634b05632a36b78ba9fa98"
+    },
+    {
+      "source": "firmware/modem-image/image/wcnss.b06",
+      "firmware_request_name": "wcnss.b06",
+      "sha256": "661ce76cfb0445b88c3fcbe543be869549aabfedf89f385676e97472ead08a67"
+    },
+    {
+      "source": "firmware/modem-image/image/wcnss.b00",
+      "firmware_request_name": "wcnss.b00",
+      "sha256": "04b6d01544d10caa74f517b382ba38fb04d28fb04021cf57ace47a4a8fb3e506"
+    },
+    {
+      "source": "firmware/modem-image/image/wcnss.b09",
+      "firmware_request_name": "wcnss.b09",
+      "sha256": "d4817aa5497628e7c77e6b606107042bbba3130888c5f47a375e6179be789fbb"
+    },
+    {
+      "source": "firmware/modem-image/image/wcnss.b12",
+      "firmware_request_name": "wcnss.b12",
+      "sha256": "e24a449eb378cc29dd2192d1e58c5b205057ba60a72245c50f571c48f210ae93"
+    },
+    {
+      "source": "firmware/modem-image/image/wcnss.mdt",
+      "firmware_request_name": "wcnss.mdt",
+      "sha256": "2f9d450e8e669adbf885ed2cafb08038e2b1e30aea10e46978390a2ad5d742a7"
+    },
+    {
+      "source": "firmware/modem-image/image/venus.mdt",
+      "firmware_request_name": "venus.mdt",
+      "sha256": "2921983c7ab77b9e0287bcf3478c11ef2d66d088b50bbaef7e1fc3f6b3ad959a"
+    },
+    {
+      "source": "firmware/modem-image/image/adsp.b08",
+      "firmware_request_name": "adsp.b08",
+      "sha256": "8afe81f8eebc3cd34c42f083c348223acef250ebb605f75514d005fdea40734f"
+    },
+    {
+      "source": "firmware/modem-image/image/modem.b09",
+      "firmware_request_name": "modem.b09",
+      "sha256": "9f8d2e74af1efd0fccbcf054d19de3aa539482d5f5f175cd053f353c8e6ca867"
+    },
+    {
+      "source": "firmware/modem-image/image/adsp.b06",
+      "firmware_request_name": "adsp.b06",
+      "sha256": "a8231198c23c02819970c18f8eef3d89c4e337d863461b0c99261a2a44287ac6"
+    },
+    {
+      "source": "firmware/modem-image/image/modem.b00",
+      "firmware_request_name": "modem.b00",
+      "sha256": "ee6a85f7fee792f44dce92af21399bb9f9070d4fc0dac50b1a49a3c5d7960759"
+    },
+    {
+      "source": "firmware/modem-image/image/modem.b07",
+      "firmware_request_name": "modem.b07",
+      "sha256": "f8e7dec6a52744cfe8e8dc2e4a1709c8fdde7cd65f309121cc8b8f5888d7842a"
+    },
+    {
+      "source": "firmware/modem-image/image/adsp.b01",
+      "firmware_request_name": "adsp.b01",
+      "sha256": "d5c9f631f08564ffb03b6bdb79c6936d63b185a4be11f2474f6b94b4ff86f6cc"
+    },
+    {
+      "source": "firmware/modem-image/image/adsp.b00",
+      "firmware_request_name": "adsp.b00",
+      "sha256": "7f0864d6085e2908e58d384b45bf3be195cf06f2a8cec8dce32446d90d58a0e2"
+    },
+    {
+      "source": "firmware/modem-image/image/modem.b06",
+      "firmware_request_name": "modem.b06",
+      "sha256": "99b9ca590c4071189ed706e54575eb7ab8d2045ebbad108f516b46979b6c612a"
+    },
+    {
+      "source": "firmware/modem-image/image/modem.b01",
+      "firmware_request_name": "modem.b01",
+      "sha256": "1e1d939ed31c7590eebf98f56579aed5af14edf9896060d74e598d85b868b1e6"
+    },
+    {
+      "source": "firmware/modem-image/image/adsp.b07",
+      "firmware_request_name": "adsp.b07",
+      "sha256": "36ef0598fdde9d88085be1c3c7b017e72ebf1583bef386d373849ea789584bab"
+    },
+    {
+      "source": "firmware/modem-image/image/modem.b08",
+      "firmware_request_name": "modem.b08",
+      "sha256": "ee12eb6cd5a5d7aa61abc2016cf2470395d6c7eff5792fb538d05d0d45d418a4"
+    },
+    {
+      "source": "firmware/modem-image/image/mba.mbn",
+      "firmware_request_name": "mba.mbn",
+      "sha256": "99f53bfde83a5b94fd728fbf1d698dfa49fd3ff576cefb50158b3f6f1c4baaa4"
+    },
+    {
+      "source": "firmware/modem-image/image/adsp.b09",
+      "firmware_request_name": "adsp.b09",
+      "sha256": "0ec2b96d59349fc5d5267b4b596c21bc5e0f091fbd632ae456946e237e9263f0"
+    },
+    {
+      "source": "firmware/stock-system/a300_pfp.fw",
+      "firmware_request_name": "qcom/a300_pfp.fw",
+      "sha256": "b6e66400d46d52dc343d370b94362d564a765994bda47dc026961dd47a9ca7a9"
+    },
+    {
+      "source": "firmware/stock-system/a300_pm4.fw",
+      "firmware_request_name": "qcom/a300_pm4.fw",
+      "sha256": "f78c57e879e96a2c0ceeea31dbd30f7f1d4526f9c876e80481c654f08daaecd3"
+    },
+    {
+      "source": "firmware/stock-system/WCNSS_qcom_wlan_nv.bin",
+      "firmware_request_name": "qcom/msm8917/motorola/perry/WCNSS_qcom_wlan_nv.bin",
+      "sha256": "d897fe930eeb08eefbef4877a144bfa670e3af9a2762eae38e06720a27cf7ece"
+    }
+  ],
+  "notes": [
+    "Stock Android Wi-Fi INI and Synaptics .tdat are preserved separately; they are not automatically interchangeable with Linux driver configuration.",
+    "Factory firmware does not include a full backup of live persist/modemst calibration partitions.",
+    "Touch-controller firmware has not been changed."
+  ]
+}

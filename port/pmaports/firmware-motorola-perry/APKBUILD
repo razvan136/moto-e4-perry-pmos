@@ -1,0 +1,20 @@
+maintainer="Razvan Gogosanu <181163337+razvan136@users.noreply.github.com>"
+pkgname=firmware-motorola-perry
+pkgver=1
+pkgrel=2
+pkgdesc="Stock-derived firmware for the Motorola Moto E4 (perry)"
+url="https://postmarketos.org"
+arch="aarch64"
+license="proprietary"
+options="!strip !check !archcheck !spdx !tracedeps pmb:cross-native"
+
+source="firmware-motorola-perry.tar.gz"
+
+package() {
+	install -d "$pkgdir"/usr/lib/firmware
+	cp -r "$srcdir"/lib/firmware/. "$pkgdir"/usr/lib/firmware/
+}
+
+sha512sums="
+bd50268d17f238fe26bc582796166cd5ab9a50adee319f1366d7945d6f1cbe6459ce4902f7289c1481d55cf9239370a507c126af6ad40ff3c8b261802788afd1  firmware-motorola-perry.tar.gz
+"

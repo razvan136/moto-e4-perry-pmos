@@ -1,0 +1,6 @@
+*.tar.gz
+*.img
+*.qcow2
+*.log
+.DS_Store
+firmware-payload/

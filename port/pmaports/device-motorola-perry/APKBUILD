@@ -1,0 +1,42 @@
+# Reference: <https://postmarketos.org/devicepkg>
+maintainer="Razvan Gogosanu <181163337+razvan136@users.noreply.github.com>"
+pkgname=device-motorola-perry
+pkgdesc="Motorola Moto E4 (perry)"
+pkgver=0
+pkgrel=0
+url="https://postmarketos.org"
+license="MIT"
+arch="aarch64"
+options="!check !archcheck"
+depends="
+	firmware-motorola-perry
+	firmware-qcom-adreno-a300
+	firmware-qcom-msm89x7
+	linux-motorola-perry
+	lk2nd-msm8952
+	mkbootimg
+	msm-firmware-loader
+	postmarketos-base
+	qbootctl
+	soc-qcom-msm89x7
+"
+makedepends="devicepkg-dev"
+source="
+	deviceinfo
+	kernel-cmdline.conf
+	modules-initfs
+"
+
+build() {
+	devicepkg_build $startdir $pkgname
+}
+
+package() {
+	devicepkg_package $startdir $pkgname
+}
+
+sha512sums="
+a41127d7c3f176109def092e40c06975a6ed502b94cf491d383c693548cae5758942aaeed0d9e13f79e107e591b19d9c12ff7dc5869dc9cb881e330fda4d18dd  deviceinfo
+1c6ce47ec28df84594918c6e9632f7ee6845b96cef831ed76aa2d6a0cbe8231d7de3c54e743bdf0f057e753b8715c1ea0a1fe2285d35cdcd947ae5a82deb9ca3  kernel-cmdline.conf
+8fdcbae690d334204fffbd251c61bcbb4ad34b38af3045e72819e467aadac1cbffee5fbc6b81c40cf5420c6ea08f330a7bf296d10fc224beddb0fc498e684b3c  modules-initfs
+"

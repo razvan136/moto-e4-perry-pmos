@@ -1,0 +1,17 @@
+libcomposite
+msm
+panel_motorola_perry_499v0_ofilm
+qcom_q6v5
+qcom_q6v5_pas
+qcom_wcnss_pil
+q6afe
+q6asm
+rmi_core
+rmi_i2c
+snd_soc_apq8016_sbc
+usb_f_acm
+usb_f_ecm
+usb_f_fs
+usb_f_rndis
+wcn36xx
+wcnss_ctrl

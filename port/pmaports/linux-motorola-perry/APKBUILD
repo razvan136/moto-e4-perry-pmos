@@ -1,0 +1,82 @@
+maintainer="Razvan Gogosanu <181163337+razvan136@users.noreply.github.com>"
+_flavor="motorola-perry"
+pkgname=linux-motorola-perry
+pkgver=7.1.3
+pkgrel=0
+pkgdesc="Mainline kernel fork for the Motorola Moto E4 (perry)"
+arch="aarch64"
+_carch="arm64"
+url="https://github.com/msm89x7-mainline/linux"
+license="GPL-2.0-only"
+options="!strip !check !tracedeps
+	pmb:cross-native
+	pmb:kconfigcheck-nftables
+	pmb:kconfigcheck-uefi
+"
+makedepends="
+	bison
+	clang
+	elfutils-dev
+	findutils
+	flex
+	linux-headers
+	lld
+	llvm
+	openssl-dev
+	pahole
+	perl
+	postmarketos-installkernel
+	python3
+	zstd
+"
+_tag="$pkgver-r1"
+_config="config-$_flavor.aarch64"
+source="
+	$pkgname-v$_tag.tar.gz::$url/archive/v$_tag.tar.gz
+	$_config
+	0001-perry-support.patch
+	0002-perry-enable-framebuffer.patch
+"
+builddir="$srcdir/linux-$_tag"
+
+prepare() {
+	default_prepare
+	cp "$srcdir/$_config" .config
+}
+
+build() {
+	unset LDFLAGS
+	make ARCH="$_carch" LLVM=1 \
+		KBUILD_BUILD_VERSION="$((pkgrel + 1 ))-postmarketOS"
+}
+
+package() {
+	mkdir -p "$pkgdir"/boot
+	make zinstall modules_install dtbs_install \
+		ARCH="$_carch" \
+		LLVM=1 \
+		INSTALL_PATH="$pkgdir"/boot \
+		INSTALL_MOD_PATH="$pkgdir"/usr \
+		INSTALL_MOD_STRIP=1 \
+		INSTALL_DTBS_PATH="$pkgdir"/boot/dtbs
+
+	# ZBOOT EFI decompressor for EFI booting
+	install -Dm644 "$builddir/arch/$_carch/boot/vmlinuz.efi" \
+		"$pkgdir/boot/linux.efi"
+
+	# Old GZIP'd kernel image for boot.img compatibility
+	install -Dm644 "$builddir/arch/$_carch/boot/vmlinuz" \
+		"$pkgdir/boot/vmlinuz"
+
+	rm -f "$pkgdir"/usr/lib/modules/*/build "$pkgdir"/usr/lib/modules/*/source
+
+	install -D "$builddir"/include/config/kernel.release \
+		"$pkgdir"/usr/share/kernel/$_flavor/kernel.release
+}
+
+sha512sums="
+c4bebf0d92f803297004d14573fbf0ccca5fc8927944f0aeecd767472ca21639ec931b6648b5601ec46eb49dd489939ae00e17f36933307bcdd371b87059796a  linux-motorola-perry-v7.1.3-r1.tar.gz
+1511d6acea7477728c346c85163fde81d5e0aae0bc5c54ae027a3dd5aa9263abaeb61df330a02500967646fd9f3a203c2b5227611771c50dcb40656be031d044  config-motorola-perry.aarch64
+dd7783ecc34fcb025bd13f8c6dbb5ad70da0eac882d069037ba5655eb5423548b758a91f769929588f747f6e3f2059b7d5ede15fcff82b88f694aa0c06081a8d  0001-perry-support.patch
+23dbe68eb76620549571e7a41b6d64400a77a36bbeec59c65a2f05bbefddca7192a4517ec40e229e68f4721333661fbf7f9cc9bc9e8b345cf8ffde2f1e469ca3  0002-perry-enable-framebuffer.patch
+"

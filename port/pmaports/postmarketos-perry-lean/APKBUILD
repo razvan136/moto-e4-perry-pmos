@@ -1,0 +1,19 @@
+maintainer="Razvan Gogosanu <181163337+razvan136@users.noreply.github.com>"
+pkgname=postmarketos-perry-lean
+pkgver=1
+pkgrel=1
+pkgdesc="Lean service profile for the Motorola Moto E4 (perry)"
+url="https://postmarketos.org"
+arch="noarch"
+license="MIT"
+depends="openrc postmarketos-ui-gnome-mobile"
+install="$pkgname.post-install"
+source="$pkgname.post-install"
+
+package() {
+	mkdir -p "$pkgdir"
+}
+
+sha512sums="
+6dbfc7f0c62ad0c7b0dedd56ff720fbd618eca8aa67d67f8bf15812e964f7b35117def1f29554a9d49b97e495b453b02a6eaea1c3387ae1942fbacd6ce5ba62e  postmarketos-perry-lean.post-install
+"
